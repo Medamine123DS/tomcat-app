@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8"> <!-- Assurez-vous que l'encodage est UTF-8 -->
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inscription - DevOps Learning</title>
+  <title>Inscription - DevOps Learning GHAZOUANI</title>
   <style>
-    /* Ajoutez des styles CSS de base pour améliorer la présentation */
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f9;
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f7fc;
       margin: 0;
       padding: 0;
     }
 
     .container {
       width: 50%;
-      margin: 0 auto;
+      margin: 40px auto;
       padding: 30px;
-      background-color: white;
+      background-color: #fff;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
     h1 {
       text-align: center;
       color: #333;
+      font-size: 24px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 14px;
+      color: #666;
     }
 
     label {
-      font-size: 14px;
-      color: #555;
       display: block;
-      margin-bottom: 8px;
+      font-size: 14px;
+      margin: 12px 0 5px;
+      color: #555;
     }
 
     input[type="text"],
@@ -40,51 +46,82 @@
     input[type="tel"] {
       width: 100%;
       padding: 12px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 4px;
+      margin: 8px 0 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 14px;
       box-sizing: border-box;
     }
 
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="email"]:focus,
+    input[type="tel"]:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+
     button {
-      background-color: #4CAF50;
-      color: white;
-      padding: 14px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
       width: 100%;
+      padding: 14px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
       font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
     }
 
     button:hover {
-      background-color: #45a049;
+      background-color: #0056b3;
+    }
+
+    .terms {
+      font-size: 12px;
+      color: #555;
+      text-align: center;
+    }
+
+    .terms a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .terms a:hover {
+      text-decoration: underline;
     }
 
     .signin {
       text-align: center;
+      margin-top: 20px;
     }
 
     .signin a {
-      color: #4CAF50;
+      color: #007bff;
     }
 
     .signin a:hover {
       text-decoration: underline;
     }
 
-    .terms {
-      font-size: 12px;
-      color: #555;
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 16px;
+      color: #777;
     }
 
-    .terms a {
-      color: #4CAF50;
+    footer h1 {
+      margin: 0;
+      font-size: 28px;
     }
 
-    .terms a:hover {
-      text-decoration: underline;
+    footer h2 {
+      margin-top: 10px;
+      font-size: 20px;
     }
+
   </style>
 </head>
 <body>
@@ -96,19 +133,19 @@
       <hr>
 
       <label for="Name"><b>Nom complet</b></label>
-      <input type="text" placeholder="Entrez votre nom complet" name="Name" id="Name" required aria-required="true">
+      <input type="text" placeholder="Entrez votre nom complet" name="Name" id="Name" required>
 
       <label for="mobile"><b>Numéro de téléphone</b></label>
-      <input type="tel" placeholder="Entrez votre numéro de mobile" name="mobile" id="mobile" required aria-required="true" pattern="[0-9]{10}">
+      <input type="tel" placeholder="Entrez votre numéro de mobile" name="mobile" id="mobile" required pattern="[0-9]{10}">
 
       <label for="email"><b>Email</b></label>
-      <input type="email" placeholder="Entrez votre email" name="email" id="email" required aria-required="true" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+      <input type="email" placeholder="Entrez votre email" name="email" id="email" required>
 
       <label for="psw"><b>Mot de passe</b></label>
-      <input type="password" placeholder="Entrez votre mot de passe" name="psw" id="psw" required aria-required="true">
+      <input type="password" placeholder="Entrez votre mot de passe" name="psw" id="psw" required minlength="6">
 
       <label for="psw-repeat"><b>Répétez le mot de passe</b></label>
-      <input type="password" placeholder="Répétez votre mot de passe" name="psw-repeat" id="psw-repeat" required aria-required="true">
+      <input type="password" placeholder="Répétez votre mot de passe" name="psw-repeat" id="psw-repeat" required minlength="6">
 
       <hr>
       
@@ -123,10 +160,8 @@
   </form>
 
   <footer>
-    <div style="text-align:center; margin-top: 30px;">
-      <h1>Merci</h1>
-      <h2>À bientôt</h2>
-    </div>
+    <h1>Merci</h1>
+    <h2>À bientôt!</h2>
   </footer>
 
 </body>
