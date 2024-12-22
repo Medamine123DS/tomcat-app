@@ -20,7 +20,8 @@
             background: #ffffff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
-            width: 400px;
+            width: 100%;
+            max-width: 400px;
             padding: 20px 30px;
         }
 
@@ -42,7 +43,7 @@
             color: #555;
         }
 
-        input[type="text"], input[type="password"] {
+        input[type="text"], input[type="password"], input[type="email"], input[type="tel"] {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
@@ -93,19 +94,19 @@
         <p>Rejoignez DevOps Learning GHAZOUANI</p>
         <form action="action_page.php" method="post">
             <label for="name">Nom complet</label>
-            <input type="text" id="name" name="name" placeholder="Entrez votre nom complet" required>
+            <input type="text" id="name" name="name" placeholder="Entrez votre nom complet" required aria-label="Nom complet">
 
             <label for="mobile">Numéro de téléphone</label>
-            <input type="text" id="mobile" name="mobile" placeholder="Entrez votre numéro de mobile" required>
+            <input type="tel" id="mobile" name="mobile" placeholder="Entrez votre numéro de mobile" required aria-label="Numéro de téléphone">
 
             <label for="email">Email</label>
-            <input type="text" id="email" name="email" placeholder="Entrez votre email" required>
+            <input type="email" id="email" name="email" placeholder="Entrez votre email" required aria-label="Email">
 
             <label for="password">Mot de passe</label>
-            <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe" required>
+            <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe" required aria-label="Mot de passe">
 
             <label for="password-repeat">Répétez le mot de passe</label>
-            <input type="password" id="password-repeat" name="password-repeat" placeholder="Répétez votre mot de passe" required>
+            <input type="password" id="password-repeat" name="password-repeat" placeholder="Répétez votre mot de passe" required aria-label="Répéter mot de passe">
 
             <p>En créant un compte, vous acceptez nos <a href="#">Conditions d'utilisation</a> et notre <a href="#">Politique de confidentialité</a>.</p>
             <button type="submit">S'inscrire</button>
