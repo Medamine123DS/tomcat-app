@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -91,7 +91,7 @@
 <body>
     <div class="container">
         <h1>Inscription</h1>
-        <p>Rejoignez DevOps Learning TEK-UP</p>
+        <p>Rejoignez DevOps Learning TEK-UP et Esprit </p>
         <form action="action_page.php" method="post">
             <label for="name">Nom complet</label>
             <input type="text" id="name" name="name" placeholder="Entrez votre nom complet" required aria-label="Nom complet">
